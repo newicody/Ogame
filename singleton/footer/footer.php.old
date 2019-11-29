@@ -1,0 +1,21 @@
+<?php
+echo '
+<ul class="legacy">
+<li><a href="">CGU</a></li>
+<li><a href="">Informations</a></li>
+<li><a href="">Contacte</a></li>
+<li><a href="">&Eacute;quipe de d&eacute;velopement</a></li>
+<li><a href="">API d\'interfa&ccedil;age de galaxies</a></li>
+<li><a href="">Affiliations et r&eacute;seau</a></li>
+<li><a href="">Demande de cloture de compte</a></li>
+</ul>
+<div class="messenger" id="messagerie2">
+<p class="obs">Observatoire</p>
+<form class="scene" name="Ajax" action="">
+<input type="text" name="text" id="txt" value="waiting for messages\'s events" /></form>
+</div>
+
+</body>
+</html>
+';
+?>

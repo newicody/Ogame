@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<elements>
+	<planetes>
+		<lunes></lunes>
+		<satelites type="solaire"></satelites>
+		<lightspeed>
+			<farm vitesse="1" />
+			<energie production="0" />
+		</lightspeed>
+	</planetes>
+
+	<convention name="gray">
+		<descriptor size="8" /> <!-- Encodage ASCII = 128octets -->
+	</convention>
+	<circle></circle>
+</elements>

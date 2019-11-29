@@ -1,0 +1,262 @@
+body {
+background-color:black;
+background:url(/board/img/planete.png);
+background-repeat:no-repeat;
+background-size:100% auto;
+height:720px;
+width:1280px;
+}
+
+html {
+}
+
+ul.table2 {
+text-align:left;
+}
+
+.introspection {
+text-align:justify;
+}
+
+label {
+color:white;
+}
+a {
+color:yellow;
+}
+}
+legend {
+color:white;
+}
+
+div.all {
+vertical-align:middle;
+padding-top:5%;
+padding-bottom:5%;
+
+}
+.inscription {
+text-align:center;
+padding-left:33%;
+padding-right:33%;
+border-color:grey;
+border-width:0px;
+border-style:groove;
+}
+
+.connection {
+
+text-align:center;
+padding-left:33%;
+padding-right:33%;
+border-color:grey;
+border-width:0px;
+border-style:groove;
+}
+
+.time {
+text-align:center;
+border-color:grey;
+border-width:0px;
+border-style:groove;
+padding-left:33%;
+padding-right:33%;
+
+}
+
+.time li{
+}
+
+
+.legacy li {
+position:relative;
+border-color:grey;
+border-width:0;
+border-style:groove;
+display:inline;
+text-align:center;
+padding:0;
+margin:0;
+}
+ul.legacy {
+padding-left:33%;
+padding-right:33%;
+margin:0;
+text-align:center;
+}
+.language {
+text-align:right;
+padding-right:33%;
+/*padding-right:15px*/
+}
+
+.path {
+text-align:left;
+padding-left:33%;
+}
+
+.montrer {
+display:inline;
+}
+
+.cacher {
+display:none;
+}
+
+montrer.a:active{
+display:block;
+}
+
+cacher.a:active{
+display:none;
+}
+
+input {
+position:relative;
+display:inline;
+position:relative;
+text-align:left;
+height:15px;
+width:70px;
+}
+
+label
+{
+position:relative;
+display:inline;
+text-align:right;
+}
+
+.box {
+position:fixed;
+display:inline;
+}
+
+li {
+color:white;
+padding-left:5%;
+list-style:none;
+}
+
+ul.table2 li {
+display:inline;
+}
+
+.messenger {
+background-color: #b2ffdf;
+height:25px;
+width:100%;
+osition:fixed;
+display:inline;
+bottom:0px;
+border-top-style:solid;
+border-color:#31d472;
+opacity:0.5;
+}
+
+p {
+display:inline;
+vertical-align:middle;
+color:white;
+}
+
+legend {
+color:white;
+
+}
+
+h1 {
+color:white;
+font-size:0.75em;
+}
+h2 {
+color:white;
+font-size:0.75em;
+}
+
+.obs {
+display:inline;
+position:relative;
+}
+
+.messenger {
+display:inline-block;
+position:fixed;
+}
+
+.obs{
+relative:inline;
+color:white;
+}
+
+.scene{
+position:absolute;
+display:inline;
+width:100%;
+}
+input#txt{
+width:100%;
+}
+
+#uri {
+width:34%;
+display:inline-block;
+position:relative;
+vertical-align:top;
+height:16px;
+color:white;
+}
+#uri fieldset {
+
+}
+
+
+#title1 {
+width:34%;
+text-align:center;
+font-size:16px;
+display:inline-block;
+position:relative;
+
+}
+#status {
+width:34%;
+display:inline-block;
+position:relative;
+}
+
+#status fieldset{
+height:150px;
+}
+
+#formule {
+display:inline-block;
+position:relative;
+width:34%;
+height:50%
+}
+#popup {
+width:5%;
+display:inline-block;
+position:relative;
+}
+#title2 {
+width:60%;
+text-align:center;
+font-size:16px;
+display:inline-block;
+position:relative;
+
+}
+#gestfil {
+width:65%;
+display:inline-block;
+position:inherit;
+vertical-align:top;
+
+}
+#spacer {
+width:59%;
+display:inline-block;
+position:relative;
+}
