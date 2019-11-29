@@ -1,0 +1,168 @@
+<?php
+//date();
+
+
+$login='logine';
+
+include('../board/lib/auth.php');
+$grp = new auth();
+$grp->login = $login;
+$grp->estunseigneur=True;
+$grp->group_want='space';
+$userr = $grp->group_ogme();
+
+include('../board/lib/ressources.php');
+$metal_refresh = new ressources();
+
+$fichier = file('/media/cdrecorder1/home/logine/ogame/monfichier.txt');
+$fichier2 = file('/media/cdrecorder1/home/logine/ogame/monfichier2.txt');
+
+//echo explode(' ',$fichier[2])[0];
+
+
+foreach($userr as $pa) {
+// seul l'action du bouton peu permettre de modifier la valeur des ressources
+// dans le fichier monfichier2.txt (total des ressources primaires).
+// le joueur peut jouer sur les rapport de production avant la venue du bouton
+// (worker.php).
+
+$pc = '/media/cdrecorder1/home/'.$pa.'/ogame/planets/';
+
+    for ( $x=1 ; $x < 7; $x++ ) 
+       {
+       $c = 1;
+       $rasion = explode(' ',$fichier[0])[$x-1];
+       $rasion2 = explode(' ',$fichier2[0])[$x-1];
+       print_r($rasion2);
+       $rasion2[$c] = $rasion;
+       print_r($rasion2);
+       $c=$c+5;
+}}
+
+/*
+        if (is_dir($pc.$x.'/batiment/metal/'))
+            {
+            if ( $vara = opendir($pc.$x.'/batiment/metal/') )
+                {
+                $y=0;
+                while(false !== ($entry = readdir($vara)))
+                    {
+                    if ($entry != "." && $entry!= "..")
+                    {
+                        $y++;
+                    }
+
+                }
+            }
+            closedir($vara);
+            echo $pa;
+            $metal_refresh->read_metal();
+
+//            echo 'Planète'.$x.' Métal'.$y;
+//            echo (($y*200)/360)*30;
+        }
+
+
+        if (is_dir($pc.$x.'/batiment/crystal/'))
+            {
+            if ( $vara = opendir($pc.$x.'/batiment/crystal/') )
+                {
+                $y=0;
+                while(false !== ($entry = readdir($vara)))
+                    {
+                    if ($entry != "." && $entry!= "..")
+                    {
+                        $y++;
+                    }
+
+                }
+            closedir($vara);
+            echo $pa;
+            echo 'Planète'.$x.' Crystal'.$y;
+            echo (($y*100)/360)*30;
+            }
+        }
+
+        if (is_dir($pc.$x.'/batiment/deuterium/'))
+            {
+            if ( $vara = opendir($pc.$x.'/batiment/deuterium/') )
+                {
+                $y=0;
+                while(false !== ($entry = readdir($vara)))
+                    {
+                    if ($entry != "." && $entry!= "..")
+                    {
+                        $y++;
+                    }
+
+                }
+            closedir($vara);
+            echo $pa;
+            echo 'Planète'.$x.' Deuterium'.$y;
+            echo (($y*50)/360)*30;
+    }
+        }
+
+        if (is_dir($pc.$x.'/batiment/elec1/'))
+            {
+            if ( $vara = opendir($pc.$x.'/batiment/elec1/') )
+                {
+                $y=0;
+                while(false !== ($entry = readdir($vara)))
+                    {
+                    if ($entry != "." && $entry!= "..")
+                    {
+                        $y++;
+                    }
+
+                }
+            closedir($vara);
+            echo $pa;
+            echo 'Planète'.$x.' Centrale électrique1'.$y;
+            echo (($y*350)/360)*30;
+            }
+        }
+
+        if (is_dir($pc.$x.'/batiment/elec2/'))
+            {
+            if ( $vara = opendir($pc.$x.'/batiment/elec2/') )
+                {
+                $y=0;
+                while(false !== ($entry = readdir($vara)))
+                    {
+                    if ($entry != "." && $entry!= "..")
+                    {
+                        $y++;
+                    }
+
+                }
+            closedir($vara);
+            echo $pa;
+            echo 'Planète'.$x.' Centrale électrique 2'.$y;
+            echo (($y*350)/360)*30;
+            }
+} 
+       if (is_dir($pc.$x.'/batiment/sat/'))
+            {
+            if ( $vara = opendir($pc.$x.'/batiment/sat/') )
+                {
+                $y=0;
+                while(false !== ($entry = readdir($vara)))
+                    {
+                    if ($entry != "." && $entry!= "..")
+                    {
+                        $y++;
+                    }
+
+                }
+            closedir($vara);
+            echo $pa;
+            echo 'Planète'.$x.' Satelites'.$y;
+            echo (($y*350)/360)*30;
+            }
+        }   
+   
+
+}
+} */
+?>
